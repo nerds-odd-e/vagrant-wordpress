@@ -21,8 +21,14 @@ for SQLFILE in /vagrant/sql/*.sql; do
 done
 
 cat >> /etc/motd <<EOF
-MySQL Hostname: 127.0.0.1
-      Username: ${MYSQL_USERNAME}
-      Password: ${MYSQL_PASSWORD}
-      Database: ${MYSQL_DATABASE}
+MySQL:
+    Hostname: 127.0.0.1
+    Username: ${MYSQL_USERNAME}
+    Password: ${MYSQL_PASSWORD}
+    Database: ${MYSQL_DATABASE}
+
+WordPress:
+    URL: http://192.168.97.5
+    Username: odd-e
+    Passowrd: s3cr3t
 EOF
