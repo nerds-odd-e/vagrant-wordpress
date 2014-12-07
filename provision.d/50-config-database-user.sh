@@ -28,7 +28,7 @@ MySQL:
     Database: ${MYSQL_DATABASE}
 
 WordPress:
-    URL: http://192.168.97.5
+    URL: http://wordpress.local
     Username: odd-e
     Passowrd: s3cr3t
 EOF

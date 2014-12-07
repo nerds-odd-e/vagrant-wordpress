@@ -13,4 +13,5 @@ tar -zxf latest.tar.gz
 cp -f wordpress.conf /etc/apache2/sites-available/
 a2dissite 000-default.conf
 a2ensite wordpress.conf
+a2enmod rewrite
 service apache2 restart
