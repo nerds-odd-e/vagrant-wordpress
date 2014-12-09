@@ -26,6 +26,23 @@ Once you back to the command prompt and everything is OK. Open your brower, Chro
 
 ## How To
 
+### Using wp-cli
+#### Create WordPress user
+
+Create a user named "tom" and password "toms3cr3t"
+
+``` console
+$ wp user create tom tom@example.com --role=editor --user_pass=toms3cr3t --display_name="Tom Hanks"
+```
+
+#### Reset WordPress user password
+
+Reset "tom"'s password to "toms3cr3t"
+
+``` console
+$ wp user update tom --user_pass=toms3cr3t
+```
+
 ### Backup WordPress database
 
 ``` console
@@ -39,4 +56,4 @@ $ vagrant ssh -c 'mysqldump -uwordpress -pwordpress wordpress' > wordpress.sql
  * PHP
  * MySQL
  * WordPress
-
+ * [wp-cli](http://wp-cli.org/)
