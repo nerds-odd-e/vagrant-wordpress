@@ -12,10 +12,31 @@ $ cd vagrant-wordpress
 $ vagrant up
 ```
 
-Once you back to the command prompt. Open your brower, Chrome of Safari, visit [http://wordpress.local](http://wordpress.local)
+Once you back to the command prompt and everything is OK. Open your brower, Chrome of Safari, visit [http://wordpress.local](http://wordpress.local)
 
-## Default WordPress account information
+## Default account information
 
- * Admin account:
+ * WordPress admin account
    - Username: odd-e
    - Password: s3cr3t
+ * MySQL account
+   - Username: wordpress
+   - Password: wordpress
+   - Database: wordpress
+
+## How To
+
+### Backup WordPress database
+
+``` console
+$ vagrant ssh -c 'mysqldump -uwordpress -pwordpress wordpress' > wordpress.sql
+```
+
+## What's inside?
+
+ * Git
+ * Apache
+ * PHP
+ * MySQL
+ * WordPress
+
